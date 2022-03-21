@@ -150,7 +150,7 @@ function draw() {
       score = score -10;
     }
 
-    if(score < 0 || bike1.isTouching(glider1) || bike1.isTouching(glider2)){
+    /*if(score < 0 || bike1.isTouching(glider1) || bike1.isTouching(glider2)){
 
       music.pause();
       music.currentTime = 0;
@@ -163,7 +163,7 @@ function draw() {
       gOver.volume(0.1);
       gOver.play();
       gameState = "stand-by";
-    }
+    }*/
 
     if(keyDown("w")){
       bike.setVelocityYEach(-velocities-3);
