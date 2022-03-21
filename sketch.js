@@ -217,15 +217,7 @@ function draw() {
     
     trails.setLifetimeEach(-1);
 
-    if(mousePressedOver(play1)&&menu_text==false){
-      goText = false;
-  
-      reset();
-      gameState = "play";
-    }
-  
-    if(touches.length>0&&menu_text==false){
-      touched.push(touches)
+    if(touches.length >0 || mousePressedOver(play1)&&menu_text==false){
       goText = false;
   
       reset();
